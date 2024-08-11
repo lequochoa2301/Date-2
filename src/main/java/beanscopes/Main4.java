@@ -17,10 +17,4 @@ public class Main4 {
         System.out.println("account2: " + accountPrototype2.getOwnerName());
     }
 }
-//// the bean as it loads into container
-//
-//ConfigurableApplicationContext cap = new ClassPathXmlApplicationContext("beanslifecycle/beans.xml");
-//
-//// destroy() method
-//        cap.close();
 

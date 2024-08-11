@@ -1,6 +1,5 @@
 package annotationbasedconfiguration;
 
-
 import org.springframework.stereotype.Repository;
 import pojobeans.Account;
 import pojobeans.AccountRepository;
@@ -27,16 +26,16 @@ public class AccountRepository2Impl implements AccountRepository {
         accountsMap.put(account2.getId(), account2);
     }
     @Override
-    public  void insert (Account account) {
+    public  void insert(Account account) {
         accountsMap.put(account.getId(), account);
 
     }
     @Override
-    public void update (Account account) {
+    public void update(Account account) {
         accountsMap.put(account.getId(), account);
     }
     @Override
-    public Account find (long accountId) {
+    public Account find(long accountId) {
         return accountsMap.get(accountId);
     }
 }
